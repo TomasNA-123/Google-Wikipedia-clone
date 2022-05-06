@@ -1,0 +1,455 @@
+body{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+main .wiki-title{
+    margin: 35px auto 0 auto;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+}
+
+main .wiki-title span{
+    display: inline-block;
+    color: transparent;
+}
+main .wiki-title strong{
+    display: block;
+    font-size: 1.2rem;
+    font-family: Linux Libertine,Georgia,Times,serif;
+    font-weight: 400;
+}
+
+.wikipedia-logo{
+    background-image: url('https://wikimediafoundation.org/wp-content/uploads/2018/08/Wikipedia_wordmark.png?w=1024');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 236.5px;
+    height: 67px;
+}
+
+.wikilogo{
+    position: absolute;
+    top: 190px;
+    left: 15px;
+    width: 200px;
+}
+
+main .languages-container{
+    width: 546px;
+    max-width: 100%;
+    height: 325px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+main .languages-container div{
+    width: 156px;
+    position: absolute;
+}
+
+main .languages-container div:hover{
+    background-color: #eaecf0;
+}
+
+main .languages-container a{
+    text-decoration: none;
+}
+
+main .languages-container strong{
+    display: inline-block;
+    font-size: 16px;
+    color: #36c;
+}
+
+main .languages-container div:hover strong{
+    text-decoration: underline;
+}
+
+main .languages-container small{
+    display: block;
+    font-size: 13px;
+    color: #54595d;
+}
+
+main .languages-container .lan-es{
+    top: 0;
+    right: 60%;
+}
+main .languages-container .lan-en{
+    top: 0;
+    left: 60%;
+}
+
+main .languages-container .lan-py{
+    top: 20%;
+    right: 70%;
+}
+main .languages-container .lan-ja{
+    top: 20%;
+    left: 70%;
+}
+
+main .languages-container .lan-de{
+    top: 40%;
+    right: 75%;
+}
+main .languages-container .lan-fr{
+    top: 40%;
+    left: 75%;
+}
+
+main .languages-container .lan-ch{
+    top: 60%;
+    right: 70%;
+}
+main .languages-container .lan-it{
+    top: 60%;
+    left: 70%;
+}
+
+main .languages-container .lan-por{
+    top: 80%;
+    right: 60%;
+}
+main .languages-container .lan-pol{
+    top: 80%;
+    left: 60%;
+}
+
+
+.search{
+    text-align: center;
+    max-width: 95%;
+    width: 540px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+main .search .search-container{    
+    width: 75%;
+    display: inline-block;
+    position: relative;
+}
+
+main .search .search-container input{
+    width: 100%;
+    height: 44px;
+
+    display: inline-block;
+    padding: 8px 64px 8px 12px;
+    box-sizing: border-box;
+
+    border: 1px solid #a2a9b1;
+}
+
+main .search .search-container input:hover{
+    border-color: #72777d;
+}
+
+main .search .search-container .select-search{
+    display: block;
+    position: absolute;
+
+    top: 11px;
+    right: 11px;
+    padding: 2px;
+    border: none;
+}
+
+main .search .btn-search{
+    background-color: #36c;
+    border-color: #36c;
+    color: white;
+
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    border-radius: 0 2px 2px 0;
+}
+
+main .search .btn-search:hover{
+    background-color: #447ff5;
+    border-color: #447ff5;
+}
+
+.search-icon{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    margin: auto;
+}
+
+
+main .colapse{
+    margin-top: 20px;
+}
+
+main .colapse .colapse-btn-container{
+    text-align: center;
+    position: relative;
+}
+
+main .colapse .colapse-border{
+    position: relative;
+    border: 1px solid gray;
+    width: 400px;
+    transition: width 1s;
+    margin: -20px auto 0px auto;
+}
+main .colapse .colapse-border.active{
+    transition: width 1s;
+    width: 90%;
+}
+
+main .colapse .colapse-btn{
+    z-index: 2;
+    position: relative;
+    color: #36c;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+main .colapse .colapse-btn:focus{
+    border: 2px solid #36c;
+}
+
+main .colapse .colapse-content{
+    transition: height 1s;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+}
+
+main .colapse .colapse-content.active{
+    background-color: #f8f9fa;
+    margin: 0px auto 0 auto;
+    width: 90%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 280px;
+    transition: height 1s;
+}
+
+/*
+main .colapse .colapse-content .colapse-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+*/
+main .colapse .colapse-content hr{
+    width: 95%;
+    margin: 17px auto 0 auto;
+}
+
+main .colapse .colapse-content ul{
+    list-style: none;
+    column-width: 112px;
+}
+
+main .colapse .colapse-content li{
+    display: block;
+}
+
+main .colapse .colapse-content a{
+    text-decoration: none;
+    color: #36c;
+}
+
+main .colapse .colapse-content a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 50px 12px 0 12px;
+    font-size: 13px;
+}
+
+footer .footer-links{
+    width: 65%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+footer .footer-about, footer .wiki-apps{
+    width: 35%;
+    display: flex;
+    float: left;
+    clear: left;
+}
+
+footer .footer-about{
+    margin-bottom: 50px;
+}
+
+footer .wiki-apps{
+    background-color: #f8f9fa;
+}
+
+footer .footer-img{
+    width: 42px;
+    height: 42px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text-container-footer{
+    color: #54595d;
+    width: 80%;
+    margin-left: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #36c;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer .footer-links-container{
+    display: flex;
+    width: 33%;
+    float: left;
+    position: relative;
+    height: 90px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer .footer-links-container:hover{
+    text-decoration: none;
+    background-color: #eaecf0;
+}
+
+footer .footer-links-container .text-container .footer-text-gray{
+    color: #54595d;
+}
+
+footer .text-container{
+    margin-left: 15px;
+}
+
+footer .img-links-footer{
+    width: 50px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 768px) {
+ 
+    footer .footer-about{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        order: 1;
+        margin-bottom: 25px;
+    }
+
+    footer .wiki-apps{
+        width: 100%;
+        text-align: center;
+        order: 3;
+        margin-top: 35px;
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    footer .footer-links{
+        width: 100%;
+        padding-left: 0px;
+        order: 2;
+    }
+
+    .text-container-footer{
+        width: 100%;
+        margin: 0;
+    }
+
+    footer{
+        display: grid;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    footer .footer-links-container{
+        width: 50%;
+    }
+
+
+    main .wiki-title{
+        margin: 10px auto 0 auto;
+        width: fit-content;
+        text-align: center;
+        position: relative;
+        display: flex;
+    }
+    
+    .wikilogo{
+        position: static;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    main .languages-container{
+        height: fit-content;
+        margin: 20px auto;
+
+        display: inline-block;
+    }
+    
+    main .languages-container div{
+        width: 33%;
+        height: 50px;
+        float: left;
+        position: relative;
+    }
+
+    main .languages-container .lan-es, main .languages-container .lan-en, main .languages-container .lan-py, main .languages-container .lan-ja, main .languages-container .lan-de, main .languages-container .lan-fr, main .languages-container .lan-ch, main .languages-container .lan-it, main .languages-container .lan-por, main .languages-container .lan-pol{
+        top: unset;
+        right: unset;
+        left: unset;
+    }
+    
+    main .colapse .colapse-border{
+        width: 250px;
+    }
+
+    main .colapse .colapse-content.active{
+        height: fit-content;
+    }
+
+    main{
+        position: relative;
+    }
+
+    .search{
+        position: absolute;
+        top: 125px;
+    }
+
+}
+
+footer .bottom-footer{
+    text-align: center;
+    margin-top: 25px;
+    order: 5;
+}

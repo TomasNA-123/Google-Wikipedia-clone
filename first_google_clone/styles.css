@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+    font-family: arial,sans-serif;
+}
+
+header{
+    text-align: right;
+    height: 10vh;
+}
+
+.lista_menu{
+    margin-top: 15px;
+    margin-right: 15px;
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+
+    font-size: 1.1rem;
+}
+
+.lista_menu li{
+    list-style: none;
+    margin-right: 14px;
+}
+
+.lista_menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.user_img{
+    height: 40px;
+    border-radius: 30px;
+}
+
+main{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.google_container{
+    display: grid;
+    max-width: 580px;
+    width: 100vw;
+}
+
+.logo_google{
+    margin: auto;
+}
+
+.input_search{
+    width: 100%;
+    height: 46px;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input_search input{
+    width: 80%;
+    height: 100%;
+    border: none;
+}
+
+.input_search div{
+    width: 10%;
+    color: black;
+    text-align: center;
+}
+
+.search_buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn_search{
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer{
+    background-color: #f2f2f2;
+    color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.footer_left, .footer_right{
+    width: 50%;
+}
+
+.footer_right{
+    text-align: right;
+}

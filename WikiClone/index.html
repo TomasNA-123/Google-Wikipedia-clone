@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="wikipedia-logo.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>WikiClone</title>
+</head>
+<body>
+  <main>
+    <section class="wiki-title">
+      <img class="wikilogo" src="wikipedia-logo.png" alt="">
+      <h1>
+        <span class="wikipedia-logo">WIKIPEDIA</span>
+        <strong>La enciclopedia libre</strong>
+      </h1>
+    </section>
+
+    <section class="languages-container">
+      <div class="lan-es">
+        <a href="#">
+          <strong>Español</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-en">
+        <a href="#">
+          <strong>English</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-py">
+        <a href="#">
+          <strong>Русский</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-ja">
+        <a href="#">
+          <strong>日本語</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-de">
+        <a href="#">
+          <strong>Deutsch</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-fr">
+        <a href="#">
+          <strong>Français</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-ch">
+        <a href="#">
+          <strong>中文</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-it">
+        <a href="#">
+          <strong>Italiano</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-por">
+        <a href="#">
+          <strong>Português</strong>
+          <small>numero</small>
+        </a>
+      </div>
+      <div class="lan-pol">
+        <a href="#">
+          <strong>Polski</strong>
+          <small>numero</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="search-container">
+        <input type="text" name="wiki-search" id="wiki-search">
+        <select class="select-search" name="select-search" id="select-search">
+          <option>ES</option>
+          <option>EN</option>
+          <option>FR</option>
+          <option>IT</option>
+        </select>
+      </div>
+      <button class="btn-search">
+        <div class="search-icon"></div>
+      </button>
+    </section>
+
+    <section class="colapse">
+      <div class="colapse-btn-container">
+        <button class="colapse-btn" onclick="colapse()">Leer Wikipedia en tu idioma</button>
+        <div id="colapse-border" class="colapse-border"></div>
+      </div>
+
+      <div id="colapse-content" class="colapse-content">
+        <hr>
+
+        <div class="colapse-row">
+          <ul>
+            <li><a href="#">Polski</a></li>
+            <li>العربية</li>
+            <li><a href="#">Deutsch</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Français</a></li>
+            <li><a href="#">Italiano</a></li>
+            <li>مصرى</li>
+            <li><a href="#">Nederlands</a></li>
+            <li><a href="#">日本語</a></li>
+            <li><a href="#">Português</a></li>
+            <li><a href="#">Русский</a></li>
+            <li><a href="#">Sinugboanong</a></li>
+            <li><a href="#">Binisaya</a></li>
+            <li><a href="#">Svenska</a></li>
+            <li><a href="#">Українська</a></li>
+            <li><a href="#">Tiếng Việt</a></li>
+            <li><a href="#">Winaray</a></li>
+            <li><a href="#">中文</a></li>
+          </ul>
+        </div>
+        <hr>
+
+        <div class="colapse-row">
+          <ul>
+            <li><a href="#">Afrikaans</a></li>
+            <li><a href="#">Slovenčina</a></li>
+            <li><a href="#">Asturianu</a></li>
+            <li><a href="#">Azərbaycanca</a></li>
+            <li><a href="#">Български</a></li>
+            <li><a href="#">Bân-lâm-gú / Hō-ló-oē</a></li>
+            <li><a href="#">বাংলা</a></li>
+            <li><a href="#">Беларуская</a></li>
+            <li><a href="#">Català</a></li>
+            <li><a href="#">Čeština</a></li>
+            <li><a href="#">Cymraeg</a></li>
+            <li><a href="#">Dansk</a></li>
+            <li><a href="#">Eesti</a></li>
+            <li><a href="#">Ελληνικά</a></li>
+            <li><a href="#">Esperanto</a></li>
+            <li><a href="#">Euskara</a></li>
+            <li><a href="#">فارسی</a></li>
+            <li><a href="#">Galego</a></li>
+            <li><a href="#">한국어</a></li>
+            <li><a href="#">Հայերեն</a></li>
+            <li><a href="#">हिन्दी</a></li>
+            <li><a href="#">Hrvatski</a></li>
+            <li><a href="#">Bahasa Indonesia</a></li>
+            <li><a href="#">עברית</a></li>
+            <li><a href="#">ქართული</a></li>
+            <li><a href="#">Latina</a></li>
+            <li><a href="#">Latviešu</a></li>
+            <li><a href="#">Lietuvių</a></li>
+            <li><a href="#">Magyar</a></li>
+            <li><a href="#">Македонски</a></li>
+            <li><a href="#">Bahasa Melayu</a></li>
+            <li><a href="#">Bahaso Minangkabau</a></li>
+            <li><a href="#">Norskbokmålnynorsk</a></li>
+            <li><a href="#">Нохчийн</a></li>
+            <li><a href="#">Oʻzbekcha / Ўзбекча</a></li>
+            <li><a href="#">Қазақша / Qazaqşa / قازاقشا</a></li>
+            <li><a href="#">Română</a></li>
+            <li><a href="#">Simple English</a></li>
+            <li><a href="#">Slovenščina</a></li>
+            <li><a href="#">Српски / Srpski</a></li>
+            <li><a href="#">Srpskohrvatski / Српскохрватски</a></li>
+            <li><a href="#">Suomi</a></li>
+            <li></li>
+            <li><a href="#">தமிழ்</a></li>
+            <li><a href="#">Татарча / Tatarça</a></li>
+            <li><a href="#">ภาษาไทย</a></li>
+            <li><a href="#">Тоҷикӣ</a></li>
+            <li><a href="#">تۆرکجه</a></li>
+            <li><a href="#">Türkçe</a></li>
+            <li><a href="#">اردو</a></li>
+            <li><a href="#">Volapük</a></li>
+            <li><a href="#">粵語</a></li>
+            <li><a href="#">မြန်မာဘာသာ</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+
+    <div class="footer-about">
+      <img class="footer-img" src="https://wikimediafoundation.org/wp-content/uploads/2018/05/cropped-wikimedia-logo_black-svg-2.png" alt="">
+      <div class="text-container-footer">
+        <p class="">Wikipedia es alojada por la Fundación Wikimedia, una organización sin fines de lucro que también alberga una gama de otros proyectos.</p>
+        <a href="#">Puedes apoyar nuestro trabajo con una donación.</a>
+      </div>
+    </div>
+    <div class="wiki-apps">
+      <img class="footer-img" src="https://pngimg.com/uploads/wikipedia/wikipedia_PNG21.png" alt="">
+      <div class="text-container-footer">
+        <strong class="">Descargar Wikipedia para Android o iOS</strong>
+        <p class="">Guarda tus artículos favoritos para leerlos sin conexión, sincroniza tus listas de lectura en varios dispositivos y personaliza tu experiencia de lectura con la aplicación oficial de Wikipedia.</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      
+      <!--row-->
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg" alt="">
+        <div class="text-container">
+          <p>Commons</p>
+          <p class="footer-text-gray">Fotos libremente utilizables y más</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/1024px-Wikivoyage-Logo-v3-icon.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikiviajes</p>
+          <p class="footer-text-gray">La guía de viajes libre</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Wiktfavicon_en.svg/1024px-Wiktfavicon_en.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikcionario</p>
+          <p class="footer-text-gray">El diccionario libre</p>
+        </div>
+      </a>
+
+      <!--row-->
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/1200px-Wikibooks-logo.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikilibros</p>
+          <p class="footer-text-gray">Libros de contenido libre</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/1200px-Wikinews-logo.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikinoticias</p>
+          <p class="footer-text-gray">La fuente de noticias libres</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Notification-icon-Wikidata-logo.svg/1200px-Notification-icon-Wikidata-logo.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikidata</p>
+          <p class="footer-text-gray">Base de conocimiento libre</p>
+        </div>
+      </a>
+
+       <!--row-->
+       <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/1200px-Wikiversity_logo_2017.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikiversidad</p>
+          <p class="footer-text-gray">Plataforma educativa libre</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Notification-icon-Wikiquote.svg/1200px-Notification-icon-Wikiquote.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikiquote</p>
+          <p class="footer-text-gray">La colección de citas</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Notification-icon-MediaWiki-logo.svg/1200px-Notification-icon-MediaWiki-logo.svg.png" alt="">
+        <div class="text-container">
+          <p>MediaWiki</p>
+          <p class="footer-text-gray">Aplicación wiki libre y abierta</p>
+        </div>
+      </a>
+
+      <!--row-->
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/1200px-Wikisource-logo.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikisource</p>
+          <p class="footer-text-gray">La biblioteca libre</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/1200px-Wikispecies-logo.svg.png" alt="">
+        <div class="text-container">
+          <p>Wikispecies</p>
+          <p class="footer-text-gray">Directorio de especies libre</p>
+        </div>
+      </a>
+      <a href="#" class="footer-links-container">
+        <img class="img-links-footer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Meta-Wiki_Proposed_logo.svg/1200px-Meta-Wiki_Proposed_logo.svg.png" alt="">
+        <div class="text-container">
+          <p>Meta-Wiki</p>
+          <p class="footer-text-gray">Coordinación y documentación comunitaria</p>
+        </div>
+      </a>
+    </div>
+
+    <section class="bottom-footer">
+      <hr>
+      <p>
+        Esta página está disponible bajo la <a href="#">licencia Creative Commons Atribución-CompartirIgual</a> &#8226; <span><a href="#">Términos de uso</a></span> &#8226; <span><a href="#">Normativa de privacidad</a></span>
+      </p>
+    </section>
+
+  </footer>
+
+  <script>
+    function colapse(){
+      document.getElementById('colapse-border').classList.toggle('active')
+      document.getElementById('colapse-content').classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
